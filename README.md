@@ -1,2 +1,33 @@
 # my-ASCIIsvg
 Peter Jipsen's ASCIIsvg with some tweaks
+
+<embed src="d.htm" width="200" height="200" script='
+ width="200"; height="200"; border=25
+ xmin=-1; xmax=6; ymin=-1; axes()
+ plot(sin(x)+2.5)
+ a = [0,0]
+ b = [5,5]
+ marker = "dot"
+ line(a,b)
+ text(a,"a",belowright)
+ text(b,"g",above)
+ text(b,"b",right)
+ text(b,"b",left)
+ text(b,"b",below)
+ text(b,"b",aboveleft)
+ text(b,"b",aboveright)
+ text(b,"b",belowleft)
+ text(b,"b",belowright)
+ stroke = "red"
+ path([a,[0,5],b,[5,0]])
+ stroke = "green"
+ marker = "none"
+ curve([a,[.25,0],[.5,.5],[1,1],[1.5,1.5]])
+ stroke = "blue"
+ circle([5,0],1)
+ ellipse([0,5],1,2)
+ stroke = "purple"
+ rect([0,0],[2,2],null,.5,1)
+ marker = "arrowdot"
+ line(a,[5,0])
+'/>
