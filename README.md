@@ -31,3 +31,5 @@ Peter Jipsen's ASCIIsvg with some tweaks
  marker = "arrowdot"
  line(a,[5,0])
 '/>
+
+HTML block's end
